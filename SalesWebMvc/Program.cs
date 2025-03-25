@@ -12,6 +12,7 @@ builder.Services.AddDbContext<SalesWebMvcContext>(options =>
 //Registra a classe SeedingService no contêiner de injeção de dependêcia
 builder.Services.AddTransient<SeedingService>();
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
