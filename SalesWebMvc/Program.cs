@@ -15,6 +15,7 @@ builder.Services.AddDbContext<SalesWebMvcContext>(options =>
 builder.Services.AddTransient<SeedingService>();
 builder.Services.AddScoped<SellerService>();
 builder.Services.AddScoped<DepartmentService>();
+builder.Services.AddScoped<SalesRecordService>();
 
 //Configura o suporte a Localizaçao en-US
 builder.Services.Configure<RequestLocalizationOptions>(options =>
